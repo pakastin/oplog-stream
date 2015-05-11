@@ -9,7 +9,7 @@
   "author": "Juha Lindstedt",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^1.4.29"
+    "mongodb": "^2.0.31"
   },
   "devDependencies": {},
   "repository": {
