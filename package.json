@@ -1,6 +1,6 @@
 {
   "name": "oplog-stream",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "MongoDB oplog stream wrapper",
   "main": "index.js",
   "scripts": {
