@@ -24,7 +24,12 @@ function OplogStream (callback) {
         numberOfRetries: -1
       })
       var stream = cursor.stream()
-
+      var destroy = stream.destroy
+      stream.destroy = function () {
+        cursor.close()
+        destroy.call(stream)
+        db.close()
+      }
       callback(null, stream)
     })
   })
